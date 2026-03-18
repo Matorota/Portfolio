@@ -32,8 +32,15 @@ export function Projects() {
     <>
       <header className="portfolio-header">
         <div className="header-content">
-          <img src="/name.jpg" alt="Portfolio Logo" className="header-logo" />
           <h1 className="header-title">Portfolio Projects</h1>
+          <a
+            href="https://github.com/Matorota"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="header-github"
+          >
+            GitHub
+          </a>
         </div>
       </header>
       <section className="projects-section">
@@ -110,6 +117,19 @@ export function Projects() {
           </div>
         </div>
       </section>
+      <footer className="portfolio-footer">
+        <div className="footer-content">
+          <p>Portfolio Matas Štrimaitis </p>
+          <a
+            href="https://github.com/Matorota"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="footer-github"
+          >
+            GitHub Link
+          </a>
+        </div>
+      </footer>
     </>
   );
 }
