@@ -32,6 +32,7 @@ export function Projects() {
     <>
       <header className="portfolio-header">
         <div className="header-content">
+          <img src="/name.jpg" alt="Portfolio Logo" className="header-logo" />
           <h1 className="header-title">Portfolio Projects</h1>
         </div>
       </header>
