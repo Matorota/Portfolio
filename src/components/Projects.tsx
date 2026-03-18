@@ -55,15 +55,15 @@ export function Projects() {
               <div key={project.id} className="project-card">
                 <div className="project-header">
                   <h2 className="project-title">{project.title}</h2>
-                  <span
-                    className={`status-badge ${getStatusColor(project.status)}`}
-                  >
-                    {getStatusLabel(project.status)}
-                  </span>
                 </div>
 
+                <span
+                  className={`status-badge ${getStatusColor(project.status)}`}
+                >
+                  {getStatusLabel(project.status)}
+                </span>
+
                 <p className="project-short-desc">{project.shortDescription}</p>
-                <p className="project-description">{project.description}</p>
 
                 <div className="project-section">
                   <h3>Key Features</h3>
@@ -84,6 +84,8 @@ export function Projects() {
                     ))}
                   </div>
                 </div>
+
+                <p className="project-description">{project.description}</p>
 
                 <div className="project-meta">
                   <span className="language-badge">{project.language}</span>
@@ -114,6 +116,21 @@ export function Projects() {
                 </div>
               </div>
             ))}
+          </div>
+
+          <div className="projects-message">
+            <p>
+              These are some of my recent projects. To see all my work and more
+              projects, visit my{" "}
+              <a
+                href="https://github.com/Matorota"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                GitHub profile
+              </a>
+              .
+            </p>
           </div>
         </div>
       </section>
